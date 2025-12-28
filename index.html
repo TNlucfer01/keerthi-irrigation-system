@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keerthi Irrigation | Professional Irrigation Solutions</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://t3.ftcdn.net/jpg/16/31/78/40/360_F_1631784055_rjyYM1EV9UmcEedsI8HAv9jfOUllYN6Z.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0,0,0,0.6);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  color: #9cffc7;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #00ffcc;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* SECTIONS */
+.section {
+  display: none;
+  padding: 70px 10%;
+  backdrop-filter: blur(3px);
+}
+
+.active {
+  display: block;
+  background: rgba(0,0,0,0.4);
+  border-radius: 15px;
+  padding: 50px 10%;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #00ffcc;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* FOOTER */
+footer {
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 15px #25d366;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Keerthi Irrigation</h1>
+  <p>Complete Irrigation Solutions | Since 30+ Years</p>
+</header>
+
+<nav>
+  <a onclick="show('home')">Home</a>
+  <a onclick="show('about')">About</a>
+  <a onclick="show('products')">Products</a>
+  <a onclick="show('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section active">
+  <div class="hero">
+    <h2>Smart Irrigation for Smart Farming</h2>
+    <p>Serving farmers with trusted irrigation solutions for over 30 years</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">Drip Irrigation Systems</div>
+    <div class="card">Sprinkler Systems</div>
+    <div class="card">Pipes & Accessories</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Keerthi Irrigation</h2>
+  <p style="margin-top:20px; line-height:1.8;">
+    Keerthi Irrigation is a leading provider of advanced agricultural irrigation solutions, 
+    with over <strong>30 years of experience</strong> in transforming farming practices 
+    across Tamil Nadu and India. Founded with the vision of empowering farmers and ensuring 
+    sustainable agricultural growth, Keerthi Irrigation has emerged as a trusted name in 
+    the field of modern irrigation technologies.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Over the past three decades, Keerthi Irrigation has specialized in designing, supplying, 
+    and installing cutting-edge <strong>drip irrigation systems</strong>, <strong>sprinkler solutions</strong>, 
+    and a wide range of irrigation accessories including high-quality PVC pipes, 
+    filters, valves, fittings, and other essential components. Our systems are engineered to 
+    optimize water usage, enhance crop productivity, and reduce operational costs for farmers, 
+    thereby making modern irrigation accessible, efficient, and profitable.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    We understand that every farm has unique needs. That is why our expert team works closely 
+    with farmers to assess soil conditions, crop types, and water resources to provide 
+    customized irrigation solutions. By leveraging modern irrigation technology and years of 
+    field experience, we help farmers increase yields, conserve water, and reduce labor requirements.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Keerthi Irrigation’s product range caters to small-scale farms as well as large agricultural 
+    enterprises. From precision drip irrigation kits for vegetable and fruit farms to robust 
+    sprinkler systems for expansive fields, our products are designed with durability, efficiency, 
+    and ease of use in mind. We source the best quality materials and components to ensure long-lasting 
+    performance, even in challenging agricultural environments.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Our commitment extends beyond just providing products. Keerthi Irrigation offers 
+    comprehensive support and guidance, including system design consultation, installation 
+    supervision, maintenance tips, and after-sales service. Our team of experienced technicians 
+    ensures that every system operates optimally, delivering maximum efficiency and results for farmers.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Sustainability is at the heart of our operations. By promoting water-efficient irrigation practices, 
+    we help farmers conserve natural resources while boosting crop yield and profitability. Our solutions 
+    not only improve productivity but also contribute to environmental stewardship, making agriculture 
+    more responsible and future-ready.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    With decades of experience, extensive knowledge of local farming conditions, and a dedication 
+    to innovation, Keerthi Irrigation has built lasting relationships with farmers, agricultural 
+    cooperatives, and government organizations. Our reputation for reliability, quality, and 
+    service excellence has made us a preferred partner in modern agriculture.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Beyond products and services, we focus on education and awareness. Keerthi Irrigation conducts 
+    training sessions, workshops, and field demonstrations to educate farmers on best irrigation 
+    practices, water management, and crop optimization techniques. We believe that informed farmers 
+    can make better decisions, resulting in sustainable growth and higher profitability.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Our vision is to be the leading provider of sustainable irrigation solutions in India, 
+    delivering cutting-edge technology, exceptional service, and practical solutions that empower 
+    farmers to achieve their goals. We continuously invest in research, innovation, and product 
+    development to stay at the forefront of irrigation technology.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Keerthi Irrigation’s core values—trust, quality, innovation, and customer satisfaction—drive 
+    every aspect of our operations. We strive to exceed expectations, deliver reliable solutions, 
+    and build lasting relationships with every farmer we serve. Our success is measured by the 
+    success of our customers and the positive impact our solutions have on agriculture and society.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Whether you are a small farmer looking to implement efficient irrigation systems or a large-scale 
+    agricultural business seeking scalable solutions, Keerthi Irrigation provides the products, 
+    expertise, and support you need to grow with confidence. We continue to innovate, educate, 
+    and serve, making modern, sustainable irrigation accessible to all.
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    Join thousands of satisfied farmers who trust Keerthi Irrigation to deliver high-quality 
+    irrigation systems, improve water efficiency, and boost crop productivity year after year. 
+    Together, we cultivate a future of sustainable, profitable, and modern agriculture.
+  </p>
+</section>
+
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <h2>Our Products</h2>
+  <div class="cards">
+    <div class="card">Drip Irrigation Kits</div>
+    <div class="card">Mini & Mega Sprinklers</div>
+    <div class="card">HDPE / PVC Pipes</div>
+    <div class="card">Filters & Valves</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+
+  <p>📍 Address:No.2/29, Bramin Street,Akkur Village, Cheyyar,Tiruvannamalai District,Tamil Nadu .Pin: 631701(Near Cheyyar SIPCOT)
+  </p>
+
+  <p>📞 Phone:+91 97869 08640 +91 94887 37186
+  </p>
+
+  <p>📧 Email: venkatakkur123@gmail.com
+  </p>
+
+  <p>🧾 GST No: 33ANHPV7991D1ZJ</p>
+
+<footer>
+  © 2025 Keerthi Irrigation | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919786908640" target="_blank">💬</a>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
