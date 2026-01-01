@@ -1,185 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Keerthi Irrigation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
+  <title>Keerthi Irrigation | Smart Agriculture Solutions</title>
 
-body {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("https://t3.ftcdn.net/jpg/16/31/78/40/360_F_1631784055_rjyYM1EV9UmcEedsI8HAv9jfOUllYN6Z.jpg")
-  no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-}
+  <meta name="description" content="Keerthi Irrigation provides smart irrigation systems, drip irrigation, sprinklers, and agricultural automation solutions across Tamil Nadu.">
+  <meta name="keywords" content="Keerthi Irrigation, Drip Irrigation, Agriculture, Smart Farming, Irrigation Systems">
+  <meta name="author" content="Keerthi Irrigation">
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 40px;
-  background: rgba(0,0,0,0.6);
-}
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
-header h1 {
-  font-size: 2.8rem;
-}
-
-header p {
-  color: #9cffc7;
-}
-
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px;
-  background: rgba(0,0,0,0.5);
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: #00ffcc;
-}
-
-/* SECTIONS */
-.section {
-  display: none;
-  padding: 70px 10%;
-  background: rgba(0,0,0,0.4);
-}
-
-.active {
-  display: block;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  color: #00ffcc;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.card {
-  background: rgba(255,255,255,0.15);
-  padding: 25px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.7);
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #25d366;
-  padding: 16px;
-  border-radius: 50%;
-  color: white;
-  font-size: 22px;
-  text-decoration: none;
-}
-</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Keerthi Irrigation</h1>
-  <p>Complete Irrigation Solutions</p>
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+  <div class="container">
+    <div class="logo">
+      <h1>Keerthi Irrigation</h1>
+      <span>Smart Agriculture Solutions</span>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="systems.html">Systems</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a onclick="show('home')">Home</a>
-  <a onclick="show('about')">About</a>
-  <a onclick="show('products')">Products</a>
-  <a onclick="show('contact')">Contact</a>
-</nav>
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h2>Smart Irrigation for a Sustainable Future</h2>
+    <p>
+      Empowering farmers with advanced irrigation technologies to save water,
+      increase yield, and improve profitability.
+    </p>
 
-<!-- HOME -->
-<section id="home" class="section active">
-  <div class="hero">
-    <h2>Smart Irrigation for Smart Farming</h2>
-    <p>Trusted irrigation solutions for farmers</p>
-  </div>
-
-  <div class="cards">
-    <div class="card">Drip Irrigation</div>
-    <div class="card">Sprinkler System</div>
-    <div class="card">Pipes & Fittings</div>
+    <div class="hero-buttons">
+      <a href="products.html" class="btn primary">Explore Products</a>
+      <a href="contact.html" class="btn secondary">Contact Us</a>
+    </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Us</h2>
-  <p>
-    Keerthi Irrigation provides quality irrigation systems and agricultural solutions
-    for modern farming with 30+ years of experience.
-  </p>
-</section>
+<!-- ================= ABOUT PREVIEW ================= -->
+<section class="about-preview">
+  <div class="container">
+    <h2>About Keerthi Irrigation</h2>
+    <p>
+      With over 30 years of experience, Keerthi Irrigation is a trusted name in
+      agricultural irrigation systems. We specialize in drip irrigation,
+      sprinkler systems, and smart farming solutions designed to maximize crop
+      yield while conserving water.
+    </p>
 
-<!-- PRODUCTS -->
-<section id="products" class="section">
-  <h2>Our Products</h2>
-  <div class="cards">
-    <div class="card">Drip Irrigation Kits</div>
-    <div class="card">Mini Sprinklers</div>
-    <div class="card">PVC & HDPE Pipes</div>
+    <a href="about.html" class="btn outline">Read More</a>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p>📍 Akkur, Cheyyar, Tiruvannamalai</p>
-  <p>📞 +91 97869 08640</p>
-  <p>📧 keerthiirrigation@gmail.com</p>
+<!-- ================= SERVICES ================= -->
+<section class="services">
+  <h2>Our Core Services</h2>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Drip Irrigation</h3>
+      <p>Efficient water delivery directly to the root zone.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Sprinkler Systems</h3>
+      <p>Uniform irrigation for large agricultural lands.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Smart Automation</h3>
+      <p>IoT-based irrigation with sensors and controllers.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Subsidy Assistance</h3>
+      <p>Complete support for PMKSY and government schemes.</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-  © 2025 Keerthi Irrigation
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="why-us">
+  <h2>Why Choose Keerthi Irrigation?</h2>
+
+  <div class="features-grid">
+    <div class="feature">
+      <h4>30+ Years Experience</h4>
+      <p>Trusted by thousands of farmers across Tamil Nadu.</p>
+    </div>
+
+    <div class="feature">
+      <h4>Advanced Technology</h4>
+      <p>Modern irrigation tools for efficient farming.</p>
+    </div>
+
+    <div class="feature">
+      <h4>Expert Support</h4>
+      <p>Technical guidance from planning to installation.</p>
+    </div>
+
+    <div class="feature">
+      <h4>Affordable Solutions</h4>
+      <p>Cost-effective systems with subsidy support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <h2>Ready to Upgrade Your Farm?</h2>
+  <p>Contact us today for a free consultation and quotation.</p>
+  <a href="contact.html" class="btn primary">Get in Touch</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2025 Keerthi Irrigation. All Rights Reserved.</p>
+  <p>Designed for Smart Agriculture</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919786908640">💬</a>
-
-<script>
-function show(id) {
-  document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-}
-</script>
+<!-- JS -->
+<script src="js/main.js"></script>
 
 </body>
 </html>
