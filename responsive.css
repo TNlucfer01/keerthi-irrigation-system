@@ -1,0 +1,120 @@
+/* =========================================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+========================================================= */
+
+/* ===============================
+   LARGE SCREENS (1200px+)
+================================ */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* ===============================
+   TABLET DEVICES (768px - 1024px)
+================================ */
+@media (max-width: 1024px) {
+
+  .hero-section {
+    padding: 70px 5%;
+  }
+
+  .hero-section h2 {
+    font-size: 2.6rem;
+  }
+
+  .services {
+    padding: 60px 5%;
+  }
+
+  .features-grid {
+    gap: 20px;
+  }
+}
+
+/* ===============================
+   MOBILE DEVICES (<= 768px)
+================================ */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .main-header {
+    padding: 15px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  /* HERO */
+  .hero-section {
+    padding: 60px 5%;
+  }
+
+  .hero-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  /* SERVICES */
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FEATURES */
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* BUTTON */
+  .btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===============================
+   SMALL DEVICES (<= 480px)
+================================ */
+@media (max-width: 480px) {
+
+  .hero-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .hero-section p {
+    font-size: 0.95rem;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-preview p {
+    font-size: 0.95rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
