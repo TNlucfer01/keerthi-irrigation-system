@@ -3,236 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Keerthi Irrigation | Smart Farming Solutions</title>
+<title>Keerthi Irrigation</title>
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-    background: #f4f6f8;
-    color: #222;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("https://t3.ftcdn.net/jpg/16/31/78/40/360_F_1631784055_rjyYM1EV9UmcEedsI8HAv9jfOUllYN6Z.jpg")
+  no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 header {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+  text-align: center;
+  padding: 40px;
+  background: rgba(0,0,0,0.6);
 }
 
 header h1 {
-    font-size: 60px;
+  font-size: 2.8rem;
 }
 
 header p {
-    font-size: 22px;
-    margin: 15px 0;
+  color: #9cffc7;
 }
 
-.btn {
-    display: inline-block;
-    padding: 14px 35px;
-    background: #2ecc71;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.btn:hover {
-    background: #27ae60;
-}
-
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 nav {
-    position: sticky;
-    top: 0;
-    background: #0b6623;
-    padding: 15px;
-    text-align: center;
-    z-index: 999;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
 }
 
 nav a {
-    color: white;
-    margin: 0 18px;
-    text-decoration: none;
-    font-weight: 600;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  color: #00ffcc;
 }
 
-/* ================= SECTION ================= */
+/* SECTIONS */
 .section {
-    padding: 80px 10%;
-    text-align: center;
+  display: none;
+  padding: 70px 10%;
+  background: rgba(0,0,0,0.4);
 }
 
-.section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #0b6623;
+.active {
+  display: block;
 }
 
-.section p {
-    max-width: 900px;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #444;
+/* HERO */
+.hero {
+  text-align: center;
 }
 
-/* ================= CARDS ================= */
+.hero h2 {
+  font-size: 3rem;
+  color: #00ffcc;
+}
+
+/* CARDS */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    transition: 0.3s;
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* ================= SYSTEMS SECTION ================= */
-.systems {
-    background: #eef7ee;
-}
-
-/* ================= CONTACT ================= */
-.contact-box {
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
 }
 
-/* RESPONSIVE */
-@media(max-width: 768px) {
-    header h1 {
-        font-size: 40px;
-    }
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  padding: 16px;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
+  <h1>Keerthi Irrigation</h1>
+  <p>Complete Irrigation Solutions</p>
+</header>
+
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#systems">Systems</a>
-    <a href="#contact">Contact</a>
+  <a onclick="show('home')">Home</a>
+  <a onclick="show('about')">About</a>
+  <a onclick="show('products')">Products</a>
+  <a onclick="show('contact')">Contact</a>
 </nav>
 
 <!-- HOME -->
-<section id="home">
-<header>
-    <div>
-        <h1>Keerthi Irrigation</h1>
-        <p>Smart Water • Smart Farming • Better Future</p>
-        <a href="#contact" class="btn">Contact Us</a>
-    </div>
-</header>
+<section id="home" class="section active">
+  <div class="hero">
+    <h2>Smart Irrigation for Smart Farming</h2>
+    <p>Trusted irrigation solutions for farmers</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">Drip Irrigation</div>
+    <div class="card">Sprinkler System</div>
+    <div class="card">Pipes & Fittings</div>
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section" id="about">
-    <h2>About Us</h2>
-    <p>
-        Keerthi Irrigation is a trusted name in agricultural irrigation solutions.
-        We provide modern drip systems, sprinkler solutions, and automated irrigation
-        technologies that help farmers increase productivity and save water.
-    </p>
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Keerthi Irrigation provides quality irrigation systems and agricultural solutions
+    for modern farming with 30+ years of experience.
+  </p>
 </section>
 
-<!-- SERVICES -->
-<section class="section" id="services">
-    <h2>Our Services</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Drip Irrigation</h3>
-            <p>High efficiency drip systems for all crops.</p>
-        </div>
-        <div class="card">
-            <h3>Sprinkler Systems</h3>
-            <p>Uniform water distribution for farms & gardens.</p>
-        </div>
-        <div class="card">
-            <h3>Automation</h3>
-            <p>Smart irrigation with timers and controllers.</p>
-        </div>
-    </div>
-</section>
-
-<!-- SYSTEMS -->
-<section class="section systems" id="systems">
-    <h2>Our Irrigation Systems</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Drip Line System</h3>
-            <p>Best solution for vegetables, fruits and plantations.</p>
-        </div>
-        <div class="card">
-            <h3>Mini Sprinkler</h3>
-            <p>Efficient for medium and large farms.</p>
-        </div>
-        <div class="card">
-            <h3>Automation System</h3>
-            <p>Smart control with timers & sensors.</p>
-        </div>
-    </div>
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <h2>Our Products</h2>
+  <div class="cards">
+    <div class="card">Drip Irrigation Kits</div>
+    <div class="card">Mini Sprinklers</div>
+    <div class="card">PVC & HDPE Pipes</div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-box">
-        <p><b>📍 Address:</b> Akkur, Cheyyar, Tiruvannamalai, Tamil Nadu</p>
-        <p><b>📞 Phone:</b> +91 97869 08640</p>
-        <p><b>📧 Email:</b> keerthiirrigation@gmail.com</p>
-    </div>
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>📍 Akkur, Cheyyar, Tiruvannamalai</p>
+  <p>📞 +91 97869 08640</p>
+  <p>📧 keerthiirrigation@gmail.com</p>
 </section>
 
 <footer>
-    <p>© 2026 Keerthi Irrigation. All Rights Reserved.</p>
+  © 2025 Keerthi Irrigation
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919786908640">💬</a>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
 
 </body>
 </html>
