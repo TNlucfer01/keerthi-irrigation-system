@@ -1,87 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Keerthi Irrigation</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Keerthi Irrigation</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: #0b6623;
+    padding: 20px 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 span {
+    color: #9cffc7;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover no-repeat;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 42px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* INFO BOX */
+.contact-info {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    color: #0b6623;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* FORM */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: #0b6623;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.contact-form button {
+    background: #0b6623;
+    color: white;
+    padding: 14px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #08834d;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="logo">
     <h1>Keerthi <span>Irrigation</span></h1>
-  </div>
-  <div class="menu-toggle">☰</div>
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="systems.html">Systems</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="systems.html">Systems</a>
+    </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero about-hero" style="background: url('assets/images/contact-bg.jpg') center/cover no-repeat;">
-  <h1>Contact Us</h1>
-  <p>Get in touch with Keerthi Irrigation</p>
+<section class="banner">
+    <h2>Contact Us</h2>
+    <p>We are always ready to help farmers grow better</p>
 </section>
 
-<!-- CONTACT SECTION -->
-<section class="contact-section reveal">
-  <div class="contact-info">
-    <div class="info-box">
-      <i class="fa-solid fa-location-dot"></i>
-      <h4>Address</h4>
-      <p>No.2/29, Bramin Street, Akkur Village, Cheyyar, Tamil Nadu 631701</p>
+<section class="contact-section">
+
+    <div class="contact-info">
+        <h3>Our Office</h3>
+        <p><strong>📍 Address:</strong> Akkur, Cheyyar, Tiruvannamalai, Tamil Nadu</p>
+        <p><strong>📞 Phone:</strong> +91 97869 08640</p>
+        <p><strong>📧 Email:</strong> keerthiirrigation@gmail.com</p>
+        <p><strong>🕒 Working Hours:</strong> 9:00 AM – 7:00 PM</p>
     </div>
 
-    <div class="info-box">
-      <i class="fa-solid fa-phone"></i>
-      <h4>Phone</h4>
-      <p>+91 97869 08640<br>+91 94887 37186</p>
+    <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Phone Number" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 
-    <div class="info-box">
-      <i class="fa-solid fa-envelope"></i>
-      <h4>Email</h4>
-      <p>venkatakkur123@gmail.com</p>
-    </div>
-
-    <div class="info-box">
-      <i class="fa-solid fa-file-invoice"></i>
-      <h4>GST Number</h4>
-      <p>33ANHPV7991D1ZJ</p>
-    </div>
-  </div>
-
-  <div class="contact-form">
-    <h2>Send a Message</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="6" required></textarea>
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
-  </div>
 </section>
 
-<!-- WHATSAPP BUTTON -->
-<a class="whatsapp" href="https://wa.me/919786908640" target="_blank">💬</a>
-
-<!-- FOOTER -->
 <footer>
-  <p>© 2025 Keerthi Irrigation | All Rights Reserved</p>
+    <p>© 2026 Keerthi Irrigation | All Rights Reserved</p>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
-
